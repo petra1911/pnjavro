@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Video projekt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Petra Njavro</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="o_meni.html">O meni</a></li>
+            <li><a href="vjezbe.html">Vježbe</a></li>
+            <li><a href="video.html" class="active">Video</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="video-container">
+            <video controls width="560" height="315">
+                <source src="video/video.mp4" type="video/mp4">
+                Vaš preglednik ne podržava video tag.
+            </video>
+        </section>
+    </main>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('slike/pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .video-container video {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</body>
+</html>

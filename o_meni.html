@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>O meni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Petra Njavro</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="o_meni.html" class="active">O meni</a></li>
+            <li><a href="vjezbe.html">Vježbe</a></li>
+            <li><a href="video.html">Video</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="opis">
+            <p>Dolazim iz Neuma i studiram grafički dizajn u Zagrebu. Volim dobar dizajn, detalje koji čine razliku i stvaranje vizuala koji pričaju svoju priču.</p>
+        </section>
+
+        <section class="slike">
+            <img src="slike/Slika1.jpg" alt="Slika 1">
+            <img src="slike/Slika2.jpg" alt="Slika 2">
+            <img src="slike/Slika3.jpg" alt="Slika 3">
+        </section>
+
+        <section class="video-inspiracija">
+            <p>Pogledajte video koji me inspirira:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SdCzIDmfDAA" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('slike/pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        section.opis p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        section.slike img {
+            max-width: 30%;
+            margin: 0 1%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        section.video-inspiracija p {
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 600px) {
+            section.slike img {
+                max-width: 80%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>

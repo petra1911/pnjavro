@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vježbe</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('slike/pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #000;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            color: #007acc;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        section img {
+            width: 300px;
+            height: auto;
+            margin: 0.5rem;
+            border: 4px solid white;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Petra Njavro</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="o_meni.html">O meni</a></li>
+        <li><a href="vjezbe.html" class="active">Vježbe</a></li>
+        <li><a href="video.html">Video</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>VJEŽBE – vektorska grafika</h2>
+        <img src="vjezbe/vjezba1.jpg" alt="Vježba 1">
+    </section>
+
+    <section>
+        <h2>Projektni zadatak 1</h2>
+        <img src="vjezbe/vjezba6.jpg" alt="Vježba 6">
+    </section>
+
+    <section>
+        <h2>VJEŽBE – piksel grafika</h2>
+        <img src="vjezbe/vjezba2.jpg" alt="Vježba 2">
+        <img src="vjezbe/vjezba3.jpg" alt="Vježba 3">
+        <img src="vjezbe/vjezba4.jpg" alt="Vježba 4">
+    </section>
+
+    <section>
+        <h2>Projektni zadatak 2</h2>
+        <img src="vjezbe/vjezba5.jpg" alt="Vježba 5">
+    </section>
+</main>
+</body>
+</html>
